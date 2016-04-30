@@ -4,7 +4,7 @@
 #
 Name     : R-DBI
 Version  : 0.3.1
-Release  : 20
+Release  : 21
 URL      : http://cran.r-project.org/src/contrib/DBI_0.3.1.tar.gz
 Source0  : http://cran.r-project.org/src/contrib/DBI_0.3.1.tar.gz
 Summary  : No detailed summary available
