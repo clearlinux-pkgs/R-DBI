@@ -4,7 +4,7 @@
 #
 Name     : R-DBI
 Version  : 0.7
-Release  : 43
+Release  : 44
 URL      : https://cran.r-project.org/src/contrib/DBI_0.7.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/DBI_0.7.tar.gz
 Summary  : R Database Interface
@@ -20,8 +20,9 @@ BuildRequires : R-xml2
 BuildRequires : clr-R-helpers
 
 %description
-# DBI
-[![Build Status](https://travis-ci.org/rstats-db/DBI.png?branch=master)](https://travis-ci.org/rstats-db/DBI) [![Coverage Status](https://codecov.io/gh/rstats-db/DBI/branch/master/graph/badge.svg)](https://codecov.io/github/rstats-db/DBI?branch=master) [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/DBI)](https://cran.r-project.org/package=DBI)
+between R and relational database management systems.  All
+    classes in this package are virtual and need to be extended by
+    the various R/DBMS implementations.
 
 %prep
 %setup -q -c -n DBI
@@ -31,11 +32,11 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1497896118
+export SOURCE_DATE_EPOCH=1502398329
 
 %install
 rm -rf %{buildroot}
-export SOURCE_DATE_EPOCH=1497896118
+export SOURCE_DATE_EPOCH=1502398329
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
