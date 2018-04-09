@@ -4,7 +4,7 @@
 #
 Name     : R-DBI
 Version  : 0.8
-Release  : 52
+Release  : 53
 URL      : https://cran.r-project.org/src/contrib/DBI_0.8.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/DBI_0.8.tar.gz
 Summary  : R Database Interface
@@ -13,11 +13,13 @@ License  : LGPL-2.0+
 Requires: R-evaluate
 Requires: R-markdown
 Requires: R-rprojroot
+Requires: R-stringi
 Requires: R-xml2
 BuildRequires : R-evaluate
 BuildRequires : R-knitr
 BuildRequires : R-markdown
 BuildRequires : R-rprojroot
+BuildRequires : R-stringi
 BuildRequires : R-xml2
 BuildRequires : clr-R-helpers
 
@@ -34,11 +36,11 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1520359487
+export SOURCE_DATE_EPOCH=1523298209
 
 %install
 rm -rf %{buildroot}
-export SOURCE_DATE_EPOCH=1520359487
+export SOURCE_DATE_EPOCH=1523298209
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
