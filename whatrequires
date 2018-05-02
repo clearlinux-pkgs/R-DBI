@@ -15,6 +15,7 @@ R-ICS
 R-ICSNP
 R-IRkernel
 R-Lahman
+R-MCMCpack
 R-NMF
 R-PKI
 R-R6
@@ -31,6 +32,7 @@ R-argparse
 R-arm
 R-bayesplot
 R-betareg
+R-biglm
 R-bipartite
 R-brms
 R-broom
@@ -61,6 +63,7 @@ R-fitdistrplus
 R-flexmix
 R-formatR
 R-fpc
+R-futile.logger
 R-gamm4
 R-gdata
 R-ggjoy
@@ -82,12 +85,16 @@ R-jsonlite
 R-klaR
 R-knitr
 R-labelled
+R-lambda.r
 R-latticeExtra
+R-leaflet
 R-lfe
 R-libcoin
 R-lme4
 R-lmtest
+R-lsmeans
 R-magrittr
+R-manipulateWidget
 R-maxLik
 R-memisc
 R-mi
@@ -101,7 +108,6 @@ R-party
 R-partykit
 R-pbkrtest
 R-pdfCluster
-R-phylogram
 R-pkgmaker
 R-plm
 R-plotly
@@ -127,6 +133,7 @@ R-rstanarm
 R-rversions
 R-rvest
 R-sandwich
+R-selectr
 R-sem
 R-seriation
 R-sfsmisc
@@ -137,6 +144,9 @@ R-shinythemes
 R-smoother
 R-sna
 R-spdep
+R-speedglm
+R-spelling
+R-stringr
 R-strucchange
 R-survey
 R-systemfit
@@ -145,10 +155,14 @@ R-tidyr
 R-tidyselect
 R-tidyverse
 R-tis
+R-tm
+R-topicmodels
 R-treatSens
 R-tseries
 R-vcd
 R-vegan
 R-viridis
 R-visNetwork
+R-webshot
+R-xml2
 apache-spark
