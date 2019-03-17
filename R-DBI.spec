@@ -4,23 +4,26 @@
 #
 Name     : R-DBI
 Version  : 1.0.0
-Release  : 66
+Release  : 67
 URL      : https://cran.r-project.org/src/contrib/DBI_1.0.0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/DBI_1.0.0.tar.gz
 Summary  : R Database Interface
 Group    : Development/Tools
 License  : LGPL-2.0+
-Requires: R-rprojroot
-Requires: R-xml2
+Requires: R-backports
+Requires: R-cli
+Requires: R-markdown
+Requires: R-withr
+BuildRequires : R-backports
+BuildRequires : R-cli
 BuildRequires : R-knitr
-BuildRequires : R-rprojroot
-BuildRequires : R-xml2
-BuildRequires : clr-R-helpers
+BuildRequires : R-markdown
+BuildRequires : R-withr
+BuildRequires : buildreq-R
 
 %description
-between R and relational database management systems.  All
-    classes in this package are virtual and need to be extended by
-    the various R/DBMS implementations.
+# DBI
+[![Build Status](https://travis-ci.org/r-dbi/DBI.png?branch=master)](https://travis-ci.org/r-dbi/DBI) [![Coverage Status](https://codecov.io/gh/r-dbi/DBI/branch/master/graph/badge.svg)](https://codecov.io/github/r-dbi/DBI?branch=master) [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/DBI)](https://cran.r-project.org/package=DBI)
 
 %prep
 %setup -q -c -n DBI
@@ -30,11 +33,11 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1525268589
+export SOURCE_DATE_EPOCH=1552831635
 
 %install
+export SOURCE_DATE_EPOCH=1552831635
 rm -rf %{buildroot}
-export SOURCE_DATE_EPOCH=1525268589
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -69,8 +72,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export _R_CHECK_FORCE_SUGGESTS_=false
-R CMD check --no-manual --no-examples --no-codoc -l %{buildroot}/usr/lib64/R/library DBI|| : 
-cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
+R CMD check --no-manual --no-examples --no-codoc  DBI || :
 
 
 %files
@@ -107,3 +109,12 @@ cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
 /usr/lib64/R/library/DBI/help/paths.rds
 /usr/lib64/R/library/DBI/html/00Index.html
 /usr/lib64/R/library/DBI/html/R.css
+/usr/lib64/R/library/DBI/tests/testthat.R
+/usr/lib64/R/library/DBI/tests/testthat/helper-dummy.R
+/usr/lib64/R/library/DBI/tests/testthat/test-data-type.R
+/usr/lib64/R/library/DBI/tests/testthat/test-interpolate.R
+/usr/lib64/R/library/DBI/tests/testthat/test-methods.R
+/usr/lib64/R/library/DBI/tests/testthat/test-quote.R
+/usr/lib64/R/library/DBI/tests/testthat/test-quoting.R
+/usr/lib64/R/library/DBI/tests/testthat/test-rownames.R
+/usr/lib64/R/library/DBI/tests/testthat/test-sql-df.R
