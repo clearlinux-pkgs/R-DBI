@@ -2,4 +2,6 @@
 R-backports
 R-cli
 R-markdown
+R-rprojroot
 R-withr
+R-xml2
