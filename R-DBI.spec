@@ -4,18 +4,18 @@
 #
 Name     : R-DBI
 Version  : 1.0.0
-Release  : 69
+Release  : 70
 URL      : https://cran.r-project.org/src/contrib/DBI_1.0.0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/DBI_1.0.0.tar.gz
 Summary  : R Database Interface
 Group    : Development/Tools
 License  : LGPL-2.0+
-Requires: R-rprojroot
-Requires: R-xml2
+Requires: R-rlang
 BuildRequires : R-backports
 BuildRequires : R-cli
 BuildRequires : R-knitr
 BuildRequires : R-markdown
+BuildRequires : R-rlang
 BuildRequires : R-rprojroot
 BuildRequires : R-withr
 BuildRequires : R-xml2
@@ -33,10 +33,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1552907926
+export SOURCE_DATE_EPOCH=1552962865
 
 %install
-export SOURCE_DATE_EPOCH=1552907926
+export SOURCE_DATE_EPOCH=1552962865
 rm -rf %{buildroot}
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
