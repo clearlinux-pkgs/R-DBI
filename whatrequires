@@ -1,11 +1,13 @@
 # This file contains recursive sources that require this package
+R-BatchJobs
 R-DBItest
 R-RSQLite
 R-SGP
 R-biglm
 R-dbplyr
 R-glue
-R-knitr
+R-lwgeom
+R-mitools
 R-sf
-R-survey
+R-spdep
 R-withr
