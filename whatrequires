@@ -2,12 +2,9 @@
 R-BatchJobs
 R-DBItest
 R-RSQLite
-R-SGP
 R-biglm
 R-dbplyr
 R-glue
-R-lwgeom
 R-mitools
 R-sf
 R-spdep
-R-withr

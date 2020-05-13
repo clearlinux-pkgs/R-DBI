@@ -1,3 +1,11 @@
 # This file contains build requirements that get picked up but are
 # undesirable. One entry per line, no whitespace.
+R-RSQLite
+R-backports
 R-blob
+R-cli
+R-markdown
+R-rlang
+R-rprojroot
+R-withr
+R-xml2

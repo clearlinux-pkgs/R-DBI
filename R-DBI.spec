@@ -4,50 +4,37 @@
 #
 Name     : R-DBI
 Version  : 1.1.0
-Release  : 79
+Release  : 80
 URL      : https://cran.r-project.org/src/contrib/DBI_1.1.0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/DBI_1.1.0.tar.gz
 Summary  : R Database Interface
 Group    : Development/Tools
 License  : LGPL-2.1
-Requires: R-RSQLite
-Requires: R-xml2
-BuildRequires : R-RSQLite
-BuildRequires : R-knitr
-BuildRequires : R-xml2
 BuildRequires : buildreq-R
 
 %description
-# DBI
-<!-- badges: start -->
-[![Build
-Status](https://travis-ci.org/r-dbi/DBI.svg?branch=master)](https://travis-ci.org/r-dbi/DBI)
-[![AppVeyor build
-status](https://ci.appveyor.com/api/projects/status/github/r-dbi/DBI?branch=master&svg=true)](https://ci.appveyor.com/project/r-dbi/DBI)
-[![Coverage
-Status](https://codecov.io/gh/r-dbi/DBI/branch/master/graph/badge.svg)](https://codecov.io/github/r-dbi/DBI?branch=master)
-[![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/DBI)](https://cran.r-project.org/package=DBI)
-[![CII Best
-Practices](https://bestpractices.coreinfrastructure.org/projects/1882/badge)](https://bestpractices.coreinfrastructure.org/projects/1882)
-<!-- badges: end -->
+between R and relational database management systems.  All classes in
+    this package are virtual and need to be extended by the various R/DBMS
+    implementations.
 
 %prep
 %setup -q -c -n DBI
+cd %{_builddir}/DBI
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1576528175
+export SOURCE_DATE_EPOCH=1589402157
 
 %install
-export SOURCE_DATE_EPOCH=1576528175
+export SOURCE_DATE_EPOCH=1589402157
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
+export FCFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
+export FFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
 export CXXFLAGS="$CXXFLAGS -O3 -flto -fno-semantic-interposition "
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
