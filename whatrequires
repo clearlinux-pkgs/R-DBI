@@ -4,7 +4,6 @@ R-DBItest
 R-RSQLite
 R-biglm
 R-dbplyr
-R-glue
 R-mitools
 R-sf
 R-spdep
