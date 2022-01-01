@@ -4,7 +4,7 @@
 #
 Name     : R-DBI
 Version  : 1.1.2
-Release  : 95
+Release  : 96
 URL      : https://cran.r-project.org/src/contrib/DBI_1.1.2.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/DBI_1.1.2.tar.gz
 Summary  : R Database Interface
@@ -26,10 +26,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1640016816
+export SOURCE_DATE_EPOCH=1640996645
 
 %install
-export SOURCE_DATE_EPOCH=1640016816
+export SOURCE_DATE_EPOCH=1640996645
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
