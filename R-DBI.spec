@@ -4,7 +4,7 @@
 #
 Name     : R-DBI
 Version  : 1.1.3
-Release  : 104
+Release  : 105
 URL      : https://cran.r-project.org/src/contrib/DBI_1.1.3.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/DBI_1.1.3.tar.gz
 Summary  : R Database Interface
