@@ -4,5 +4,6 @@ R-DBItest
 R-RSQLite
 R-biglm
 R-dbplyr
+R-duckdb
 R-mitools
 R-sf
